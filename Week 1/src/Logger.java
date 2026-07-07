@@ -1,18 +1,9 @@
 public class Logger {
     private static Logger instance;
-
-    private Logger() {
-        System.out.println("Logger System Initialized.");
-    }
-
+    private Logger() { System.out.println("Logger System Initialized."); }
     public static Logger getInstance() {
-        if (instance == null) {
-            instance = new Logger();
-        }
+        if (instance == null) { instance = new Logger(); }
         return instance;
     }
-
-    public void log(String message) {
-        System.out.println("[LOG]: " + message);
-    }
+    public void log(String message) { System.out.println("[LOG]: " + message); }
 }
