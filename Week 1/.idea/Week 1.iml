@@ -1,0 +1,22 @@
+public class Logger {
+    // 1. Create a private static instance of the Logger class (Lazy Initialization)
+    private static Logger instance;
+
+    // 2. Make the constructor private so no other class can use 'new Logger()'
+    private Logger() {
+        System.out.println("Logger System Initialized.");
+    }
+
+    // 3. Provide a public static method to get the instance of the Logger class
+    public static Logger getInstance() {
+        if (instance == null) {
+            instance = new Logger(); // Created only when needed
+        }
+        return instance;
+    }
+
+    // A sample method to demonstrate logging functionality
+    public void log(String message) {
+        System.out.println("[LOG]: " + message);
+    }
+}
