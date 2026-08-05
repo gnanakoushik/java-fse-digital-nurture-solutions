@@ -1,0 +1,2 @@
+.score-card { border: 1px solid #ccc; padding: 12px; max-width: 360px; background: #fafafa; }
+.score-card .avg { font-weight: bold; color: #1a73e8; }
