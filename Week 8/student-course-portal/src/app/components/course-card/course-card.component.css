@@ -1,0 +1,3 @@
+.card--enrolled { background: #e6ffed; }
+.card--full { border-left-width: 6px; }
+.card { transition: all 0.2s ease-in-out; }

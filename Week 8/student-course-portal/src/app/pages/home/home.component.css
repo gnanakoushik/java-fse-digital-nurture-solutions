@@ -1,0 +1,2 @@
+.stats { display: flex; gap: 16px; margin-top: 16px; }
+.stats div { background: #e8f0fe; padding: 8px 12px; border-radius: 8px; }

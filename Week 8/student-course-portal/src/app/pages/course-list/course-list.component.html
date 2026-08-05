@@ -1,0 +1,12 @@
+<section class="card">
+  <h2>Course List</h2>
+  <label>
+    Search:
+    <input [(ngModel)]="searchTerm" (ngModelChange)="updateSearch()" />
+  </label>
+  <ul>
+    <li *ngFor="let course of courses" (click)="openCourse(course.id)" style="cursor:pointer;">
+      <strong>{{ course.name }}</strong> ({{ course.code }}) — {{ course.credits }} credits
+    </li>
+  </ul>
+</section>

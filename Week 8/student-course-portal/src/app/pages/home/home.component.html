@@ -1,0 +1,23 @@
+<section class="card">
+  <h1>{{ portalName }}</h1>
+  <p>Welcome to the student course portal. Browse courses and manage your profile.</p>
+
+  <div>
+    <button [disabled]="!isPortalActive" (click)="onEnrollClick()">Enroll Now</button>
+    <p *ngIf="message">{{ message }}</p>
+  </div>
+
+  <div style="margin-top: 16px;">
+    <label>
+      Search courses:
+      <input [(ngModel)]="searchTerm" />
+    </label>
+    <p>Searching for: {{ searchTerm }}</p>
+  </div>
+
+  <div class="stats">
+    <div>Courses Available: 12</div>
+    <div>Enrolled: 3</div>
+    <div>GPA: 3.8</div>
+  </div>
+</section>
